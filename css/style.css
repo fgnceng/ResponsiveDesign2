@@ -1,0 +1,80 @@
+body {
+    /* Workaround for some mobile browsers */
+  /*  min-height:100%; */
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.nav-link{
+    color: white;
+    font-size: 19px;
+}
+.navbar-brand{
+    color:white;
+    font-size: 49px;
+}
+
+#headerSection {
+    background-size: cover;
+    height: 100vh;
+    color:white;
+    background:url('../Images/bridge-1660417_1920.jpg') no-repeat center fixed;
+    background-size:cover;
+
+}
+
+#headerSection .overlay {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 100px 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+.btn.btn-our-works
+{
+    height: 60px;
+    width: 220px;
+    background-image:linear-gradient(to left,#8A0BDB,#00FFBA);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:31px;
+    border: 0;
+}
+
+.black{
+    height: 46px;
+    width: 206px;
+    background-color:black;
+    border-radius:22px;
+    margin-top: 7px;
+    margin-left:7px;
+    line-height: 46px;
+
+}
+.text-light{
+    font-size:15px;
+}
+
+/* features section*/
+
+.container .col-lg-4{
+    margin-top: 30px;
+    padding-right: 80px;
+    padding-bottom:34px;
+    float: left;
+}
+.features-content{
+    font-size: 14px;
+}
+
+img{
+    padding-right:34px;
+}
+
+
+
