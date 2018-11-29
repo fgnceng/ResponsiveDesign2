@@ -89,7 +89,7 @@ p{
     color:#707070;
 }
 
-img{
+.icons{
     padding-right:34px;
 }
 
@@ -102,8 +102,11 @@ img{
 .aboutUsLeft {
     background:url('../images/workspace.jpg'),no-repeat center fixed;
     background-size: cover;
-    height:860px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:740px;
     position: relative;
+
 }
 .aboutUsLeft .overlay {
     background-color:rgba(255, 102, 204,.2);
@@ -168,8 +171,184 @@ img{
 
 /* portfolioSection*/
 
+#porfolio{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 #portfolio .col-md-4 {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+}
+
+.content {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border: 1px solid #fff;
+}
+
+.content:hover .content-overlay{
+    opacity: 1;
+
+}
+
+.content-image{
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+.content-details .content-title{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+
+}
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+    top: 80%;
+}
+
+.btn.btn-load-more
+{
+    height: 60px;
+    width: 220px;
+    background-image:linear-gradient(to left,#8A0BDB,#00FFBA);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:31px;
+    border: 0;
+}
+
+/*JUMBUTRON SECTİON */
+
+.content-image {
+    float: left;
+}
+.img-fluid .rounded-circle {
+
+    border: 1px solid #000000;
+    border-radius: 100%;
+
+}
+
+
+.carousel-inner,.carousel,.carousel-item,.container,.fill {
+    height:100%;
+    min-height:387px;
+    width:100%;
+    background-position:center center;
+    background-size:cover;
+}
+.slide-wrapper{display:inline;}
+.slide-wrapper .container{padding:0;}
+
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner> .carousel-item.carousel-item-next ,
+.carousel-inner > .carousel-item.active.carousel-item-right{
+    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;
+
+}
+.carousel-inner > .carousel-item.carousel-item-prev ,
+.carousel-inner > .carousel-item.active.carousel-item-left{
+    transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;
+
+}
+.carousel-inner > .carousel-item.next.carousel-item-left ,
+.carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right ,
+.carousel-inner > .carousel-item.active{
+    transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;
+
+}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:15px;
+    width: 15px;
+    border-radius: 7px;
+    right:10px; left:auto;
+    width:auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.carousel-indicators li{
+    display:block; margin-bottom:5px; border:1px solid white;
+    height:15px;
+    width: 15px;
+    border-radius:7px;
+    background:none;
+
+}
+.carousel-indicators li.active{
+    margin-bottom:5px; background:#00a199;
+
+}
+
+#jumbutron{
+    background:url('../images/workplace-1245776_1920.jpg'),no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+#jumbutron .overlay {
+    background-image:linear-gradient(to left, rgba(138, 11, 219, 0.7), rgba(0, 255, 186, 0.51));
+}
+
+sectionjumbutron{
+
 }
