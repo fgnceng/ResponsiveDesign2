@@ -60,6 +60,7 @@ p{
     background-size: cover;
     border-radius:31px;
     border: 0;
+    margin-top: 60px;
 }
 
 .black{
@@ -281,7 +282,6 @@ p{
 
 .carousel-inner,.carousel,.carousel-item,.container,.fill {
     height:100%;
-    min-height:387px;
     width:100%;
     background-position:center center;
     background-size:cover;
@@ -342,13 +342,98 @@ p{
 #jumbutron{
     background:url('../images/workplace-1245776_1920.jpg'),no-repeat center fixed;
     background-size: cover;
-    background-position: center;
+    background-position:center;
     color:white;
 }
 #jumbutron .overlay {
     background-image:linear-gradient(to left, rgba(138, 11, 219, 0.7), rgba(0, 255, 186, 0.51));
 }
 
-sectionjumbutron{
+/* CART SECTİON*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+    border-radius: 0;
+    background-image: none;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.card-deck .card:hover {
+    border: 1px solid transparent;
+    color:white;
+
+}
+.card-deck .card-headers .card:hover {
+    color:white;
+}
+
+.card-deck .card .overlayButton{
+    background-image:linear-gradient(#00FFBA,#8A0BDB);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border: 1px solid #fff;
+    z-index: -1;
+}
+.card-deck .card:hover .overlayButton{
+    opacity: 1;
+    text-decoration-color: white;
+
+}
+
+.font-weight-normal {
+    color:#8A0BDB;
+    font-size: 28px;
+}
+
+.pricing-card-title{
+    color:#8A0BDB;
+    font-size:34px;
+}
+
+
+.btn.btn-buy-now
+{
+    height: 56px;
+    width: 184px;
+    background-image:linear-gradient(to left,#8A0BDB,#00FFBA);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:31px;
+    border: 0;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.black-buy-now{
+    height: 41px;
+    width: 169px;
+    background-color:black;
+    border-radius:22px;
+    margin-top: 7px;
+    margin-left:7px;
+    line-height: 46px;
+    max-width: 90%;
 
 }
