@@ -34,7 +34,7 @@ nav .navbar-toggler .navbar-toggler-icon {
 
 #headerSection {
     background-size: cover;
-    height: 100vh;
+
     color:white;
     background:url('../images/bridge-1660417_1920.jpg') no-repeat center fixed;
     background-size:cover;
@@ -370,6 +370,7 @@ p{
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    border:3px #8A0BDB solid ;
 }
 
 .card-deck .card:hover {
@@ -392,12 +393,13 @@ p{
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     z-index: -1;
+    text-decoration-color: #8A0BDB;
 }
 .card-deck .card:hover .overlayButton{
     opacity: 1;
-    text-decoration-color: white;
+
 
 }
 
@@ -436,4 +438,39 @@ p{
     line-height: 46px;
     max-width: 90%;
 
+}
+
+
+.card-deck .card:hover .black-buy-now{
+    background-color: white;
+    color:#8A0BDB !important;
+    font-weight: bold;
+
+}
+
+
+.subfooter{
+    background-color: black;
+}
+
+.footer{
+    width: 100%;
+    height: 350px;
+}
+
+.name {
+    height: 35px;
+    width: 135px;
+    border-radius: 4px;
+
+}
+.surname {
+    border-radius: 4px;
+    height: 35px;
+    width: 229px;
+}
+
+.footer-btn{
+    color: #ffffff;
+    background-color: #00FFBA;
 }
