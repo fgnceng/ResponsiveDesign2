@@ -1,0 +1,38 @@
+
+
+.container-fluid{
+    width: 100%;
+    margin: auto;
+}
+footer {
+    text-align: center;
+
+    background:url('../images/golden-gate-bridge-388917_1920.jpg'),no-repeat center fixed;
+    background-position: center;
+    background-size: cover;
+    color:white;
+}
+footer .overlay {
+    background-image:linear-gradient(to left, rgba(138, 11, 219, 0.7), rgba(0, 255, 186, 0.51));
+    width: 907px;
+    height: 380px;
+}
+
+footer .footer-box{
+    padding-top: 60px;
+    margin-top: 40px;
+    width: 100%;
+
+}
+footer .footer-box p{
+
+    font-size: 18px;
+}
+footer .footer-box .fa{
+    display: inline-block;
+     border-color: #707070;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    margin: 5px;
+    font-size: 20px;
+}
